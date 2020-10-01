@@ -25,14 +25,21 @@ As a Linux user of more than a decade, I don't like using windows. I *really* do
 
 ## Enhancements of basic functionality
 * [Powershell Community Extensions](https://github.com/Pscx/Pscx): makes powershell nicer, with stuff like reverse history search
-* [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) the closest you can get to running Linux on your machine without using a VM. It's not perfect, but close enough
-* [MobaXterm](https://mobaxterm.mobatek.net): The nicest linux terminal experience for windows, also includes a pretty decent Cygwin distro (tho I use it mostly with WSL). Use the free version, you probably don't need the paid goodies
-  > Chocolatey install: `choco install mobaxterm`
 * [PowerToys](https://github.com/microsoft/PowerToys) various enhancements on windows functionality
   > Chocolatey install: `choco install powertoys`
 * [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/) better audio streams control panel
   > Chocolatey install: `choco install voicemeeter`
+  
+### For the Linux crowd
+* [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) the closest you can get to running Linux on your machine without using a VM. It's not perfect, but close enough
+* [AltDrag](https://stefansundin.github.io/altdrag/) gives you back the functionality of being able to alt + drag a window (alt + right click drag resizes). **important:** If you're using win10 with DPI scaling, you will need [this workaround](https://github.com/stefansundin/altdrag/issues/7#issuecomment-667418224)
+> Chocolatey install: `choco install altdrag`
+* [Alacritty](https://github.com/alacritty/alacritty) is a really slick terminal emulator (and ONLY a terminal emulator). **note:** You will likely want to generate a `alacritty.yml` and tweak it a little - I'm setting the startup command to `powershell wsl ~` so it's my WSL terminal.
+> Chocolatey install: `choco install alacritty`
+* [MobaXterm](https://mobaxterm.mobatek.net): The nicest linux terminal experience for windows, also includes a pretty decent Cygwin distro (tho I use it mostly with WSL). Use the free version, you probably don't need the paid goodies (InfoSec banned it from my workplace because SSH tunnels ☹️, so I'm switching to alacritty)
+  > Chocolatey install: `choco install mobaxterm`
+
 ## Other apps
-* [Lync Logger](https://github.com/Zougi/LyncLogger/releases/tag/v1.1) (use v1.1, audio recording is broken in v1.2): chatlogs for Lync / Skype for business, will be useful until that particular thing dies the death it richly deserves.
 * [Draw.io](https://www.draw.io): diagram tool, it's a great replacement for Visio. There's also [a desktop client](https://github.com/jgraph/drawio-desktop/releases) and a Jupyter notebook version.
   > Chocolatey install: `choco install drawio`
+
