@@ -1,0 +1,36 @@
+# reference: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates
+# use this to make a template that can be included in the pipeline as a job, this way:
+#
+# jobs:
+# - template: template_job.yml
+#   parameters:
+#     jobname: JobName
+#     jobdispname: Job _Display Name
+#     dependsOn: SomeOtherJobsName
+
+parameters:
+- name: jobname
+  default: "DefJobName"
+- name: jobdispname
+  default: "Default Job Name"
+- name: dependsOn
+  default: ""
+
+jobs:
+- job: ${{ parameters.jobname }}
+  displayName: ${{ parameters.jobdispname }}
+  dependsOn: ${{ parameters.dependsOn }}
+  pool:
+    vmImage: 'ubuntu-latest'
+    #vmImage: 'windows-latest'
+  steps:
+
+  - task: someTask1
+    inputs:
+      param1: value1
+      param2: value2
+
+  - task: someTask2
+    inputs:
+      param1: value1
+      param2: value2
