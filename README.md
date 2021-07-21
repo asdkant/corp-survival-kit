@@ -33,11 +33,15 @@ As a Linux user of more than a decade, I don't like using windows. I *really* do
 ### For the Linux crowd
 * [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) the closest you can get to running Linux on your machine without using a VM. It's not perfect, but close enough
 * [AltDrag](https://stefansundin.github.io/altdrag/) gives you back the functionality of being able to alt + drag a window (alt + right click drag resizes). **important:** If you're using win10 with DPI scaling, you will need [this workaround](https://github.com/stefansundin/altdrag/issues/7#issuecomment-667418224)
-> Chocolatey install: `choco install altdrag`
-* [Alacritty](https://github.com/alacritty/alacritty) is a really slick terminal emulator (and ONLY a terminal emulator). **note:** You will likely want to generate a `alacritty.yml` and tweak it a little - I'm setting the startup command to `powershell wsl ~` so it's my WSL terminal.
-> Chocolatey install: `choco install alacritty`
-* [MobaXterm](https://mobaxterm.mobatek.net): The nicest linux terminal experience for windows, also includes a pretty decent Cygwin distro (tho I use it mostly with WSL). Use the free version, you probably don't need the paid goodies (InfoSec banned it from my workplace because SSH tunnels ☹️, so I'm switching to alacritty)
-  > Chocolatey install: `choco install mobaxterm`
+  > Chocolatey install: `choco install altdrag`
+* [Windows Terminal](https://github.com/microsoft/terminal) is *really* good if you need a terminal without extra frills that just works and gets out of the way.
+  > Chocolatey install: `choco install microsoft-windows-terminal`
+  
+  If not, here's two alternatives:
+  * [Alacritty](https://github.com/alacritty/alacritty) is a really slick terminal emulator (and ONLY a terminal emulator). **note:** You will likely want to generate a `alacritty.yml` and tweak it a little - I'm setting the startup command to `powershell wsl ~` so it's my WSL terminal.
+    > Chocolatey install: `choco install alacritty`
+  * [MobaXterm](https://mobaxterm.mobatek.net): The nicest linux terminal experience for windows, also includes a pretty decent Cygwin distro (tho I use it mostly with WSL). Use the free version, you probably don't need the paid goodies (InfoSec banned it from my workplace because SSH tunnels ☹️, so I'm switching to alacritty)
+    > Chocolatey install: `choco install mobaxterm`
 
 ## Other apps
 * [Draw.io](https://www.draw.io): diagram tool, it's a great replacement for Visio. There's also [a desktop client](https://github.com/jgraph/drawio-desktop/releases) and a Jupyter notebook version.
