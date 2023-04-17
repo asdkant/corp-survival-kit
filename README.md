@@ -41,3 +41,6 @@ As a Linux user of more than a decade, I don't like using windows. I *really* do
 * [Draw.io](https://www.draw.io): diagram tool, it's a great replacement for Visio. There's also [a desktop client](https://github.com/jgraph/drawio-desktop/releases) and a Jupyter notebook version.
   > Chocolatey install: `choco install drawio`
 
+## Danger Zone
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads) + [RAW VMDK Disk Image](https://www.virtualbox.org/manual/ch09.html#rawdisk): If you NEED and a linux, and have some freedoms (such as admin privileges on the Windows install and either enough space on disk, or the ability to bring your own USB Drive), you can always install one in a VM, with the drive either as an image on a portable USB FS or directly on the drive, so that it can work on another machine or VirtualBox setup transparently.
+
