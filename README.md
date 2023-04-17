@@ -34,7 +34,7 @@ As a Linux user of more than a decade, I don't like using windows. I *really* do
 * [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) the closest you can get to running Linux on your machine without using a VM. It's not perfect, but close enough
 * [AltDrag](https://stefansundin.github.io/altdrag/) gives you back the functionality of being able to alt + drag a window (alt + right click drag resizes). **important:** If you're using win10 with DPI scaling, you will need [this workaround](https://github.com/stefansundin/altdrag/issues/7#issuecomment-667418224)
   > Chocolatey install: `choco install altdrag`
-* [Windows Terminal](https://github.com/microsoft/terminal) is *really* good if you need a terminal without extra frills that just works and gets out of the way.
+* [Windows Terminal](https://github.com/microsoft/terminal) is *really* good if you need a terminal without extra frills that just works and gets out of the way. Already comes with windows 11, so in that case just go ahead and use it =)
   > Chocolatey install: `choco install microsoft-windows-terminal`
 
 ## Other apps
