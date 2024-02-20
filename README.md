@@ -4,6 +4,7 @@ As a Linux user of more than a decade, I don't like using windows. I *really* do
 
 ## Software & system Management
 * [Chocolatey](https://chocolatey.org): a package manager for windows, similar to APT, Yum, Pacman and the like.
+* [Scoop](https://scoop.sh): same as Chocolatey but local to your user (no UAC prompts)
 
 ## day-to-day utils
 * [KeePass](https://keepass.info): **DO NOT** save your passwords in a text file, use this (preferably version 2)
@@ -36,7 +37,9 @@ As a Linux user of more than a decade, I don't like using windows. I *really* do
   > Chocolatey install: `choco install altdrag`
 * [Windows Terminal](https://github.com/microsoft/terminal) is *really* good if you need a terminal without extra frills that just works and gets out of the way. Already comes with windows 11, so in that case just go ahead and use it =)
   > Chocolatey install: `choco install microsoft-windows-terminal`
+* Powershell [supports][ps-emacs-mode] an EMACS input mode, just add `Set-PSReadlineOption -EditMode Emacs` in your `$PROFILE` file (there's also a vim mode!)
 
+[ps-emacs-mode]: https://stackoverflow.com/questions/8360215/use-ctrl-d-to-exit-and-ctrl-l-to-cls-in-powershell-console
 ## Other apps
 * [Draw.io](https://www.draw.io): diagram tool, it's a great replacement for Visio. There's also [a desktop client](https://github.com/jgraph/drawio-desktop/releases) and a Jupyter notebook version.
   > Chocolatey install: `choco install drawio`
